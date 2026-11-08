@@ -3,7 +3,7 @@ set -e
 if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 apt-get install curl jq ipset iptables wget -y
 apt-get install --no-install-recommends cron -y
-wget -O /usr/local/bin/update-banlist.sh https://raw.githubusercontent.com/Ne00n/netopsec-banbanban/refs/heads/master/update.sh
+wget -O /usr/local/bin/update-banlist.sh https://raw.githubusercontent.com/Ne00n/netopsec-blocker/refs/heads/master/update.sh
 echo "e848436879cf84b697adbbe0f49a5cfcb2a8a80b229f772815128c9615d3262b /usr/local/bin/update-banlist.sh" | sha256sum -c --status - || { echo "Checksum mismatch, aborting." >&2; exit 1; }
 chmod +x /usr/local/bin/update-banlist.sh
 

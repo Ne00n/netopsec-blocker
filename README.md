@@ -1,4 +1,4 @@
-# netopsec-banbanban
+# netopsec-blocker
 ```
-curl -so- https://raw.githubusercontent.com/Ne00n/netopsec-banbanban/refs/heads/master/install.sh | bash
+curl -so- https://raw.githubusercontent.com/Ne00n/netopsec-blocker/refs/heads/master/install.sh | bash
 ```
